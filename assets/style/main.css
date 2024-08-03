@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+html {
+    font-size: calc(10 * 100vw / 390); /* 390はSPデザインカンプの幅 */   
+    /* 変換サイト・ツールなどで、 390pxの幅での10pxを変換して2.56vwなのでそれを当ててもよい */
+    /* font-size: 2.564102vw; */
+}
+
+@media (min-width:768px) {
+    html {
+          font-size: calc(10 * 100vw / 1200); /* 1200はPCカンプのコンテンツ幅 */
+}
+}
+
+@media (min-width: 1200px) {
+html {
+        font-size: 62.5%;
+}
+}
+
+/* ベースのスタイル
+------------------------------------------ */
+
+body {
+    font-family: "Noto Serif JP", sans-serif;
+    line-height: 1.75;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+a:hover {
+    opacity: 0.6;
+}
+
+/* フォント */
+.font_m{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font_e{
+    font-family: "EB Garamond", serif;
+    font-style: normal;
+}
+
+.section{
+    padding: 0 2rem;
+}
+/* メインヴィジュアル*/
+.main{
+    background-image: url(/assets/image/mainVisual_sp.jpg);
+    /* height: 60.7rem; */
+}
+
+@media screen and (min-width: 768px) {
+    .main{
+        background-image: url(/assets/image/mainVisual_pc.jpg);
+        /* height: 72rem; */
+        width: 100%;
+        margin-inline: auto;
+        max-width: 150rem;
+    }
+    
+}
+
+
+.main__block{
+    padding: 2.1rem 2.3rem 5.2rem 2.3rem;
+}
+@media screen and (min-width: 768px) {
+    .main__block{
+        padding: 4.8rem 0 5.2rem 0;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    
+}
+
+
+.main__logo{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: 0.48rem;
+    margin-bottom: 36.1rem;
+}
+
+.main__block h1{
+    font-size: 4.1rem;
+    line-height: 5.4rem;
+    letter-spacing: 1.23rem;
+    margin-bottom: 0.6rem;
+}
+
+.main__block-txt{
+    font-size: 2.0rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.6rem;
+}
+
+
+/* オンラインショップへ */
+.shop{
+    padding: 0 1.6rem 5rem 1.6rem;
+    width: 100%;
+}
+
+.shop2{
+    padding: 0 1.6rem 1rem 1.6rem;
+    width: 100%;
+}
+
+.shop__block{
+    background-color: #F0F4FF;
+    padding: 2.2rem 2.9rem 3.4rem 2.9rem;
+}
+
+.shop__block-txt1{
+    margin-left: 7.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.18rem;
+}
+
+.shop__block-txt2{
+    margin-left: 10.4rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.14rem;
+}
+
+.shop__block-btn1{
+    display: block;
+    background-color: #46C4DB;
+    border-radius: 3.4rem;
+    /* padding: 1.8rem 10.1rem 1.6rem 6.1rem; */
+    padding-top: 1.8rem;
+    padding-left: 6.1rem;
+    padding-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem; 
+    letter-spacing: 0;
+    color: #FFFFFF;   
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.shop__block-btn2{
+    display: block;
+    background-color: #5DD5AB;
+    border-radius: 3.4rem;
+    /* padding: 1.8rem 12.2rem 1.6rem 11.4rem; */
+    padding-top: 1.8rem;
+    padding-left: 11.4rem;
+    padding-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem; 
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #FFFFFF; 
+}
+
+
+/* Keep Your Skin Beautiful */
+
+.explain{
+    padding: 4.8rem 1.6rem 35.1rem;
+    background-image: url(/assets/image/explainVisual_sp.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.explain__block-tit-en{
+    font-size: 3.0rem;
+    line-height: 5.4rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0.8rem;
+}
+
+.explain__block-tit-jp{
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    line-height: 5.4rem;
+    letter-spacing: 0;
+    margin-bottom: 2.3rem;
+    text-align: center;
+
+}
+
+.explain__block-txt{
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+
+/* Voices */
+.voices{
+    padding: 5rem 1.6rem;
+    width: 100%;
+}
+.voices-tit-en{
+    font-size: 3.0rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.voices-tit-jp{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    text-align: center;
+}
+.a-slider{
+
+    /* padding: 0 5rem; */
+}
+
+.slider__item{
+    background-color: #46C4DB;
+    margin-inline: 6rem;
+}
+
+
+/* Q&A */
+.question{
+    padding: 3.2rem 1.6rem;
+    width: 100%;
+    background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
+    margin-bottom: 5rem;
+}
+
+.question-tit-en{
+    font-size: 3.0rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.question-tit-jp{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3.8rem;
+}
+
+.question__accordion__content{
+    display: none;
+}
+
+.question__accordion__header{
+    background-color: #FFF;
+    padding: 2rem 1.66rem 1.9rem 1.6rem;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.question__accordion__header.active{
+    margin-bottom: 0;
+}
+
+
+.question__accordion__content {
+    background-color: #FFF;
+    padding: 0.1rem 1.7rem 6.2rem 1.6rem;
+    margin-bottom: 2rem;
+}
+.question__accordion__header p{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    position: relative;
+    padding-left: 2.8rem;
+    padding-right: 2.64rem;
+    letter-spacing: 0;
+}
+
+.question__accordion__content p{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    position: relative;
+    padding-left: 2.8rem;
+}
+
+.question__accordion__header p::before{
+    position: absolute;
+    content:"Q.";
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.08rem;
+    font-family: "EB Garamond", serif;
+}
+
+.question__accordion__content p::before{
+    position: absolute;
+    content:"A.";
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.08rem;
+    font-family: "EB Garamond", serif;
+}
+.question__accordion__header p::after{
+    position: absolute;
+    content:"";
+    background-image: url(/assets/image/caret-down-fill.png);
+    top: 1rem;
+    right: 0;
+    width: 1.16rem;
+    height: 0.748rem;
+}
+.question__accordion__header.active p::after{
+    background-image: url(/assets/image/caret-up-fill.png);
+}
+    /* hover */
+.question__accordion__header:hover {
+    background-color: #F2F2F2;
+}
+
+/* footer */
+
+.to-top{
+    width: 100%;
+    padding: 0 1.6rem 0 33.4rem;
+}
+.to-top a{
+    display: block;
+    background-color: #0071CE;
+    height: 4rem;
+    width: 4rem;
+    padding: 1.2rem 1.3rem;
+}
+.to-top a img{
+    height: 1.6rem;
+    width: 1.4rem;
+}
+.footer-box{
+    background-color: #0071CE;
+    padding: 2.1rem 5.3rem 2.4rem 4.5rem;
+}
+.footer-box__logo{
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+    letter-spacing: 0.56rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 2.6rem;
+}
+
+.footer-box ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.6rem;
+}
+.footer-box ul li a{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+.footer-box-txt{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+
