@@ -23,7 +23,6 @@ html {
 
 body {
     font-family: "Noto Serif JP", sans-serif;
-    line-height: 1.75;
     color: #000000;
 }
 
@@ -68,10 +67,11 @@ a:hover {
 @media screen and (min-width: 768px) {
     .main{
         background-image: url(/assets/image/mainVisual_pc.jpg);
-        /* height: 72rem; */
+        height: 72rem;
         width: 100%;
         margin-inline: auto;
         max-width: 150rem;
+
     }
     
 }
@@ -82,9 +82,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
     .main__block{
-        padding: 4.8rem 0 5.2rem 0;
-        max-width: 60rem;
-        margin: 0 auto;
+        padding: 2.9rem 22.3rem 27.4rem;
     }
     
 }
@@ -97,12 +95,31 @@ a:hover {
     letter-spacing: 0.48rem;
     margin-bottom: 36.1rem;
 }
+@media screen and (min-width: 768px) {
+    .main__logo{
+        font-size: 2.8rem;
+        line-height: 3.7rem;
+        text-align: center;
+        letter-spacing: 0.56rem;
+        margin-bottom: 20.1rem;
+    }
+    
+}
 
 .main__block h1{
     font-size: 4.1rem;
     line-height: 5.4rem;
     letter-spacing: 1.23rem;
     margin-bottom: 0.6rem;
+}
+@media screen and (min-width: 768px) {
+    .main__block h1{
+        font-size: 5rem;
+        line-height: 6.8rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 1.1rem;
+    }
+    
 }
 
 .main__block-txt{
@@ -111,11 +128,27 @@ a:hover {
     letter-spacing: 0.6rem;
 }
 
+@media screen and (min-width: 768px) {
+    .main__block-txt{
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+        letter-spacing: 0.75rem;
+    }
+    
+}
 
 /* オンラインショップへ */
 .shop{
     padding: 0 1.6rem 5rem 1.6rem;
     width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .shop{
+        padding: 4.8rem 0;
+        margin-inline: auto;
+        max-width: 100rem;
+    }
+    
 }
 
 .shop2{
@@ -127,29 +160,61 @@ a:hover {
     background-color: #F0F4FF;
     padding: 2.2rem 2.9rem 3.4rem 2.9rem;
 }
+@media screen and (min-width: 768px) {
+    .shop__block{
+        padding: 4.4rem 4.8rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 3.2rem;
+    }
+    
+}
 
 .shop__block-txt1{
-    margin-left: 7.2rem;
+    padding-left: 7.2rem;
     margin-bottom: 0.6rem;
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
     letter-spacing: 0.18rem;
 }
+@media screen and (min-width: 768px) {
+    .shop__block div:nth-of-type(1){
+        /* padding-right: 8.5rem; */
+        padding-right: 0rem;
+    }
+    .shop__block-txt1{
+        padding-left: 0;
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.24rem;
+    }
+    
+}
 
 .shop__block-txt2{
-    margin-left: 10.4rem;
+    padding-left: 10.4rem;
     margin-bottom: 2rem;
     font-size: 1.4rem;
     line-height: 1.9rem;
     letter-spacing: 0.14rem;
+}
+@media screen and (min-width: 768px) {
+    .shop__block-txt2{
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.16rem;
+    }
+    
 }
 
 .shop__block-btn1{
     display: block;
     background-color: #46C4DB;
     border-radius: 3.4rem;
-    /* padding: 1.8rem 10.1rem 1.6rem 6.1rem; */
     padding-top: 1.8rem;
     padding-left: 6.1rem;
     padding-bottom: 1.6rem;
@@ -160,11 +225,18 @@ a:hover {
     margin-bottom: 2rem;
     font-weight: 600;
 }
+@media screen and (min-width: 768px) {
+    .shop__block-btn1{
+        margin-bottom: 0;
+        width: 30rem;
+        height: 5.8rem;
+    }
+    
+}
 .shop__block-btn2{
     display: block;
     background-color: #5DD5AB;
     border-radius: 3.4rem;
-    /* padding: 1.8rem 12.2rem 1.6rem 11.4rem; */
     padding-top: 1.8rem;
     padding-left: 11.4rem;
     padding-bottom: 1.6rem;
@@ -174,7 +246,13 @@ a:hover {
     font-weight: 600;
     color: #FFFFFF; 
 }
-
+@media screen and (min-width: 768px) {
+    .shop__block-btn2{
+        width: 30rem;
+        height: 5.8rem;
+    }
+    
+}
 
 /* Keep Your Skin Beautiful */
 
@@ -183,6 +261,17 @@ a:hover {
     background-image: url(/assets/image/explainVisual_sp.jpg);
     width: 100%;
     background-size: cover;
+}
+@media screen and (min-width: 768px) {
+    .explain{
+        padding: 12.7rem 20.4rem 16rem 82.9rem;
+        background-image: url(/assets/image/explainVisual_pc.jpg);
+        background-size: cover;
+        margin-inline: auto;
+        max-width: 150rem;
+        height: 55rem;
+    }
+    
 }
 
 .explain__block-tit-en{
@@ -194,6 +283,13 @@ a:hover {
     color: #FFFFFF;
     margin-bottom: 0.8rem;
 }
+@media screen and (min-width: 768px) {
+    .explain__block-tit-en{
+        font-size: 3.8rem;
+        text-align: left;
+    }
+    
+}    
 
 .explain__block-tit-jp{
     font-weight: 600;
@@ -203,7 +299,13 @@ a:hover {
     letter-spacing: 0;
     margin-bottom: 2.3rem;
     text-align: center;
-
+}
+@media screen and (min-width: 768px) {
+    .explain__block-tit-jp{
+        text-align: left;
+        margin-bottom: 2.7rem;
+    }
+    
 }
 
 .explain__block-txt{
@@ -212,13 +314,29 @@ a:hover {
     letter-spacing: 0;
     color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+    .explain__block-txt{
+        text-align: left;
+    }
+    
+}
 
 
 /* Voices */
 .voices{
     padding: 5rem 1.6rem;
     width: 100%;
+    margin-inline: auto;
 }
+@media screen and (min-width: 768px) {
+    .voices{
+        padding: 8rem 17.2rem;
+        width: 100%;
+        margin-inline: auto;
+    }
+    
+}
+
 .voices-tit-en{
     font-size: 3.0rem;
     line-height: 3.2rem;
@@ -227,6 +345,16 @@ a:hover {
     text-align: center;
     margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+    .voices-tit-en{
+        font-size: 4.5rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.225rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.9rem;
+    }   
+}
 .voices-tit-jp{
     font-size: 1.6rem;
     line-height: 3.2rem;
@@ -234,16 +362,80 @@ a:hover {
     font-weight: 600;
     text-align: center;
 }
-.a-slider{
+@media screen and (min-width: 768px) {
+    .voices-tit-jp{
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        text-align: center;
+    }   
+
+}
+.voices__block{
+    padding: 0;
+}
+.voices__slider{
+
+display: flex;
+justify-content: space-between;
+gap: 0.7rem;
+width: 28rem;
+height: 34.4rem;
+margin: 0;
 
     /* padding: 0 5rem; */
 }
 
-.slider__item{
-    background-color: #46C4DB;
-    margin-inline: 6rem;
+.voices__slider__item{
+    background-image: url(/assets/image/slider.jpg);
+    padding: 2.8rem 1.5rem 8.5rem 1.5rem;
+
+}
+.voices__slider__item div{
+    padding: 0 7rem;
+    margin-bottom: 0.9rem;
+}
+.voices__slider__item div img{
+    width: 8rem;
+    height: 8rem;
+}
+.voices__slider__item p:nth-of-type(1){
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.07rem;
+}
+.voices__slider__item p:nth-of-type(2){
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+}
+.slick-list{
+    width: 80%;
 }
 
+.prev-arrow{
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-top: 15rem;
+    /* left: -4rem; */
+}
+.next-arrow{
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-top: 15rem;
+    /* right: -4rem; */
+}
+/* .slick-prev::before{
+    content: "";
+    background-image: url(/assets/image/arrow-left-circle-fill.jpg);
+}
+.slick-next::before{
+    content: "";
+    background-image: url(/assets/image/arrow-right-circle-fill.jpg);
+} */
 
 /* Q&A */
 .question{
@@ -252,7 +444,17 @@ a:hover {
     background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
     margin-bottom: 5rem;
 }
-
+@media screen and (min-width: 768px){
+    .question{
+        padding: 4rem 2rem;
+        margin-bottom: 0;
+    }
+    .question__block{
+        max-width: 60rem;
+        margin-inline: auto;
+    }
+        
+}
 .question-tit-en{
     font-size: 3.0rem;
     line-height: 3.2rem;
@@ -261,6 +463,7 @@ a:hover {
     text-align: center;
     margin-bottom: 0.5rem;
 }
+
 .question-tit-jp{
     font-size: 1.6rem;
     line-height: 3.2rem;
