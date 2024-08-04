@@ -155,7 +155,14 @@ a:hover {
     padding: 0 1.6rem 1rem 1.6rem;
     width: 100%;
 }
-
+@media screen and (min-width: 768px) {
+    .shop2{
+        padding: 4.8rem 0 0.8rem 0;
+        margin-inline: auto;
+        max-width: 100rem;
+    }
+    
+}
 .shop__block{
     background-color: #F0F4FF;
     padding: 2.2rem 2.9rem 3.4rem 2.9rem;
@@ -463,6 +470,17 @@ margin: 0;
     text-align: center;
     margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px){
+    .question-tit-en{
+        font-size: 4.5rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.225rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.9rem;
+    }   
+}
+
 
 .question-tit-jp{
     font-size: 1.6rem;
@@ -472,6 +490,17 @@ margin: 0;
     text-align: center;
     margin-bottom: 3.8rem;
 }
+@media screen and (min-width: 768px){
+    .question-tit-jp{
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4.1rem;
+    }   
+}
+
 
 .question__accordion__content{
     display: none;
@@ -484,6 +513,12 @@ margin: 0;
     position: relative;
     margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px){
+    .question__accordion__header{
+        margin-bottom: 2.4rem;
+    }   
+}
+
 .question__accordion__header.active{
     margin-bottom: 0;
 }
@@ -493,6 +528,11 @@ margin: 0;
     background-color: #FFF;
     padding: 0.1rem 1.7rem 6.2rem 1.6rem;
     margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px){
+    .question__accordion__content{
+        margin-bottom: 2.4rem;
+    }   
 }
 .question__accordion__header p{
     font-size: 1.5rem;
@@ -522,6 +562,13 @@ margin: 0;
     letter-spacing: 0.08rem;
     font-family: "EB Garamond", serif;
 }
+@media screen and (min-width: 768px){
+    .question__accordion__header p::before{
+        font-size: 1.8rem;
+        letter-spacing: 0.09rem;
+    }   
+}
+
 
 .question__accordion__content p::before{
     position: absolute;
@@ -533,6 +580,14 @@ margin: 0;
     letter-spacing: 0.08rem;
     font-family: "EB Garamond", serif;
 }
+@media screen and (min-width: 768px){
+    .question__accordion__content p::before{
+        font-size: 1.8rem;
+        letter-spacing: 0.09rem;
+    }   
+}
+
+
 .question__accordion__header p::after{
     position: absolute;
     content:"";
@@ -542,6 +597,14 @@ margin: 0;
     width: 1.16rem;
     height: 0.748rem;
 }
+@media screen and (min-width: 768px){
+    .question__accordion__header p::after{
+        width: 1.2rem;
+        height: 0.8rem;
+    }   
+}
+
+
 .question__accordion__header.active p::after{
     background-image: url(/assets/image/caret-up-fill.png);
 }
@@ -556,12 +619,21 @@ margin: 0;
     width: 100%;
     padding: 0 1.6rem 0 33.4rem;
 }
+@media screen and (min-width: 768px){
+    .to-top{
+        width: 100%;
+        padding: 0;
+        text-align: right;
+    }
+}
+
 .to-top a{
     display: block;
     background-color: #0071CE;
     height: 4rem;
     width: 4rem;
     padding: 1.2rem 1.3rem;
+    margin: 0 0 0 auto;
 }
 .to-top a img{
     height: 1.6rem;
@@ -571,6 +643,20 @@ margin: 0;
     background-color: #0071CE;
     padding: 2.1rem 5.3rem 2.4rem 4.5rem;
 }
+@media screen and (min-width: 768px){
+    .footer__pc{
+        background-color: #0071CE;
+        padding: 0 2rem;
+    }
+    .footer-box{
+        display: flex;
+        justify-content: space-between;
+        gap: 15rem;
+        padding: 2.8rem 0 3.3rem;
+        max-width: 114.8rem;
+        margin-inline: auto;
+    } 
+}
 .footer-box__logo{
     font-size: 2.8rem;
     line-height: 3.7rem;
@@ -579,11 +665,28 @@ margin: 0;
     text-align: center;
     margin-bottom: 2.6rem;
 }
+@media screen and (min-width: 768px){
+    .footer-box__logo{
+        font-size: 3.2rem;
+        line-height: 4.3rem;
+        letter-spacing: 0.64rem;
+        color: #FFFFFF;
+        margin-bottom: 0;
+        /* text-align: center; */
+    }
+}
 
 .footer-box ul{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.6rem;
+}
+@media screen and (min-width: 768px){
+    .footer-box ul{
+        margin-bottom: 0;
+        align-items: center;
+        gap: 4rem;
+    }
 }
 .footer-box ul li a{
     font-size: 1.2rem;
@@ -591,11 +694,25 @@ margin: 0;
     letter-spacing: 0;
     color: #FFFFFF;
 }
+@media screen and (min-width: 768px){
+    .footer-box ul li a{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+}
 .footer-box-txt{
     font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: 0;
     color: #FFFFFF;
     text-align: center;
+}
+@media screen and (min-width: 768px){
+    .footer-box-txt{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
