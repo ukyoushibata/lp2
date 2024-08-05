@@ -23,7 +23,7 @@ html {
 
 body {
     font-family: "Noto Serif JP", sans-serif;
-    color: #000000;
+    color: #000;
 }
 
 a {
@@ -40,7 +40,7 @@ li {
     list-style: none;
 }
 a:hover {
-    opacity: 0.6;
+    opacity: .6;
 }
 
 /* フォント */
@@ -92,7 +92,7 @@ a:hover {
     font-size: 2.4rem;
     line-height: 3.2rem;
     text-align: center;
-    letter-spacing: 0.48rem;
+    letter-spacing: .48rem;
     margin-bottom: 36.1rem;
 }
 @media screen and (min-width: 768px) {
@@ -100,7 +100,7 @@ a:hover {
         font-size: 2.8rem;
         line-height: 3.7rem;
         text-align: center;
-        letter-spacing: 0.56rem;
+        letter-spacing: .56rem;
         margin-bottom: 20.1rem;
     }
     
@@ -110,7 +110,7 @@ a:hover {
     font-size: 4.1rem;
     line-height: 5.4rem;
     letter-spacing: 1.23rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: .6rem;
 }
 @media screen and (min-width: 768px) {
     .main__block h1{
@@ -125,14 +125,14 @@ a:hover {
 .main__block-txt{
     font-size: 2.0rem;
     line-height: 2.7rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: .6rem;
 }
 
 @media screen and (min-width: 768px) {
     .main__block-txt{
         font-size: 2.5rem;
         line-height: 3.3rem;
-        letter-spacing: 0.75rem;
+        letter-spacing: .75rem;
     }
     
 }
@@ -157,7 +157,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
     .shop2{
-        padding: 4.8rem 0 0.8rem 0;
+        padding: 4.8rem 0 .8rem 0;
         margin-inline: auto;
         max-width: 100rem;
     }
@@ -179,11 +179,11 @@ a:hover {
 
 .shop__block-txt1{
     padding-left: 7.2rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: .6rem;
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
-    letter-spacing: 0.18rem;
+    letter-spacing: .18rem;
 }
 @media screen and (min-width: 768px) {
     .shop__block div:nth-of-type(1){
@@ -195,7 +195,7 @@ a:hover {
         margin-bottom: 1rem;
         font-size: 2.4rem;
         line-height: 3.2rem;
-        letter-spacing: 0.24rem;
+        letter-spacing: .24rem;
     }
     
 }
@@ -205,7 +205,7 @@ a:hover {
     margin-bottom: 2rem;
     font-size: 1.4rem;
     line-height: 1.9rem;
-    letter-spacing: 0.14rem;
+    letter-spacing: .14rem;
 }
 @media screen and (min-width: 768px) {
     .shop__block-txt2{
@@ -213,7 +213,7 @@ a:hover {
         margin-bottom: 0;
         font-size: 1.6rem;
         line-height: 2.1rem;
-        letter-spacing: 0.16rem;
+        letter-spacing: .16rem;
     }
     
 }
@@ -228,7 +228,7 @@ a:hover {
     font-size: 1.8rem;
     line-height: 2.4rem; 
     letter-spacing: 0;
-    color: #FFFFFF;   
+    color: #FFF;   
     margin-bottom: 2rem;
     font-weight: 600;
 }
@@ -251,7 +251,7 @@ a:hover {
     line-height: 2.4rem; 
     letter-spacing: 0;
     font-weight: 600;
-    color: #FFFFFF; 
+    color: #FFF; 
 }
 @media screen and (min-width: 768px) {
     .shop__block-btn2{
@@ -287,8 +287,8 @@ a:hover {
     font-weight: bold;
     letter-spacing: 0;
     text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 0.8rem;
+    color: #FFF;
+    margin-bottom: .8rem;
 }
 @media screen and (min-width: 768px) {
     .explain__block-tit-en{
@@ -300,7 +300,7 @@ a:hover {
 
 .explain__block-tit-jp{
     font-weight: 600;
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 2.4rem;
     line-height: 5.4rem;
     letter-spacing: 0;
@@ -319,7 +319,7 @@ a:hover {
     font-size: 1.4rem;
     line-height: 3.2rem;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #FFF;
 }
 @media screen and (min-width: 768px) {
     .explain__block-txt{
@@ -347,25 +347,25 @@ a:hover {
 .voices-tit-en{
     font-size: 3.0rem;
     line-height: 3.2rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: .15rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 @media screen and (min-width: 768px) {
     .voices-tit-en{
         font-size: 4.5rem;
         line-height: 3.2rem;
-        letter-spacing: 0.225rem;
+        letter-spacing: .225rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 0.9rem;
+        margin-bottom: .9rem;
     }   
 }
 .voices-tit-jp{
     font-size: 1.6rem;
     line-height: 3.2rem;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     font-weight: 600;
     text-align: center;
 }
@@ -373,76 +373,104 @@ a:hover {
     .voices-tit-jp{
         font-size: 2rem;
         line-height: 3.2rem;
-        letter-spacing: 0.1rem;
+        letter-spacing: .1rem;
         font-weight: 600;
         text-align: center;
+        margin-bottom: 4.1rem;
     }   
 
 }
-.voices__block{
-    padding: 0;
-}
-.voices__slider{
 
-display: flex;
-justify-content: space-between;
-gap: 0.7rem;
-width: 28rem;
-height: 34.4rem;
-margin: 0;
 
-    /* padding: 0 5rem; */
+
+@media screen and (min-width:768px){
+    .voices__slider{
+        display: flex;
+    }
 }
 
-.voices__slider__item{
-    background-image: url(/assets/image/slider.jpg);
+@media screen and (min-width:768px) {
+    .voices__slider__item{
+        padding: 0 2rem;
+    }
+    
+}
+.voices__slider__item__inner{
+    background-color: #DBF7F9 ;
     padding: 2.8rem 1.5rem 8.5rem 1.5rem;
 
 }
-.voices__slider__item div{
-    padding: 0 7rem;
-    margin-bottom: 0.9rem;
+@media screen and (min-width:768px) {
+    .voices__slider__item__inner{
+        padding: 4rem 1.6rem 7rem 1.6rem;
+    }    
 }
-.voices__slider__item div img{
-    width: 8rem;
-    height: 8rem;
+.voices__slider__item div{
+    margin-bottom: .9rem;
+}
+
+@media screen and (min-width:768px) {
+    .voices__slider__item div img{
+        width: 10rem;
+        height: 10rem;
+        margin-inline: auto;
+    }
+    
 }
 .voices__slider__item p:nth-of-type(1){
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.4rem;
     line-height: 3.2rem;
-    letter-spacing: 0.07rem;
+    letter-spacing: .07rem;
+}
+@media screen and (min-width:768px) {
+    .voices__slider__item p:nth-of-type(1){
+        font-size: 1.5rem;
+        line-height: 3.2rem;
+        letter-spacing: .075rem;
+        margin-bottom: 1.6rem;
+    }
+    
 }
 .voices__slider__item p:nth-of-type(2){
     font-size: 1.4rem;
     line-height: 2.8rem;
     letter-spacing: 0;
 }
-.slick-list{
-    width: 80%;
+@media screen and (min-width:768px) {
+    .voices__slider__item p:nth-of-type(2){
+        font-size: 1.6rem;
+    }
+    
 }
 
+.slick-arrow{
+    width: 4.8rem;
+}
 .prev-arrow{
     height: 3.2rem;
     width: 3.2rem;
-    margin-top: 15rem;
-    /* left: -4rem; */
+}
+@media screen and (min-width: 768px){
+    .prev-arrow{
+        height: 4.8rem;
+        width: 4.8rem;
+    }
+    
 }
 .next-arrow{
     height: 3.2rem;
     width: 3.2rem;
-    margin-top: 15rem;
-    /* right: -4rem; */
 }
-/* .slick-prev::before{
-    content: "";
-    background-image: url(/assets/image/arrow-left-circle-fill.jpg);
+@media screen and (min-width: 768px){
+    .next-arrow{
+        height: 4.8rem;
+        width: 4.8rem;
+    }
+    
 }
-.slick-next::before{
-    content: "";
-    background-image: url(/assets/image/arrow-right-circle-fill.jpg);
-} */
+
 
 /* Q&A */
 .question{
@@ -465,19 +493,19 @@ margin: 0;
 .question-tit-en{
     font-size: 3.0rem;
     line-height: 3.2rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: .15rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 @media screen and (min-width: 768px){
     .question-tit-en{
         font-size: 4.5rem;
         line-height: 3.2rem;
-        letter-spacing: 0.225rem;
+        letter-spacing: .225rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 0.9rem;
+        margin-bottom: .9rem;
     }   
 }
 
@@ -485,7 +513,7 @@ margin: 0;
 .question-tit-jp{
     font-size: 1.6rem;
     line-height: 3.2rem;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 3.8rem;
@@ -494,7 +522,7 @@ margin: 0;
     .question-tit-jp{
         font-size: 2rem;
         line-height: 3.2rem;
-        letter-spacing: 0.1rem;
+        letter-spacing: .1rem;
         font-weight: 600;
         text-align: center;
         margin-bottom: 4.1rem;
@@ -526,7 +554,7 @@ margin: 0;
 
 .question__accordion__content {
     background-color: #FFF;
-    padding: 0.1rem 1.7rem 6.2rem 1.6rem;
+    padding: .1rem 1.7rem 6.2rem 1.6rem;
     margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px){
@@ -559,13 +587,13 @@ margin: 0;
     left: 0;
     font-size: 1.6rem;
     line-height: 3.2rem;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     font-family: "EB Garamond", serif;
 }
 @media screen and (min-width: 768px){
     .question__accordion__header p::before{
         font-size: 1.8rem;
-        letter-spacing: 0.09rem;
+        letter-spacing: .09rem;
     }   
 }
 
@@ -577,13 +605,13 @@ margin: 0;
     left: 0;
     font-size: 1.6rem;
     line-height: 3.2rem;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     font-family: "EB Garamond", serif;
 }
 @media screen and (min-width: 768px){
     .question__accordion__content p::before{
         font-size: 1.8rem;
-        letter-spacing: 0.09rem;
+        letter-spacing: .09rem;
     }   
 }
 
@@ -595,12 +623,12 @@ margin: 0;
     top: 1rem;
     right: 0;
     width: 1.16rem;
-    height: 0.748rem;
+    height: .748rem;
 }
 @media screen and (min-width: 768px){
     .question__accordion__header p::after{
         width: 1.2rem;
-        height: 0.8rem;
+        height: .8rem;
     }   
 }
 
@@ -660,8 +688,8 @@ margin: 0;
 .footer-box__logo{
     font-size: 2.8rem;
     line-height: 3.7rem;
-    letter-spacing: 0.56rem;
-    color: #FFFFFF;
+    letter-spacing: .56rem;
+    color: #FFF;
     text-align: center;
     margin-bottom: 2.6rem;
 }
@@ -669,8 +697,8 @@ margin: 0;
     .footer-box__logo{
         font-size: 3.2rem;
         line-height: 4.3rem;
-        letter-spacing: 0.64rem;
-        color: #FFFFFF;
+        letter-spacing: .64rem;
+        color: #FFF;
         margin-bottom: 0;
         /* text-align: center; */
     }
@@ -692,7 +720,7 @@ margin: 0;
     font-size: 1.2rem;
     line-height: 1.6rem;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #FFF;
 }
 @media screen and (min-width: 768px){
     .footer-box ul li a{
@@ -704,7 +732,7 @@ margin: 0;
     font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #FFF;
     text-align: center;
 }
 @media screen and (min-width: 768px){
