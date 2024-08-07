@@ -4,6 +4,7 @@ html {
     font-size: calc(10 * 100vw / 390); /* 390はSPデザインカンプの幅 */   
     /* 変換サイト・ツールなどで、 390pxの幅での10pxを変換して2.56vwなのでそれを当ててもよい */
     /* font-size: 2.564102vw; */
+    scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
@@ -24,6 +25,7 @@ html {
 body {
     font-family: "Noto Serif JP", sans-serif;
     color: #000;
+    line-height: 1.75;
 }
 
 a {
@@ -55,34 +57,39 @@ a:hover {
     font-style: normal;
 }
 
-.section{
-    padding: 0 2rem;
-}
+
 /* メインヴィジュアル*/
 .main{
     background-image: url(/assets/image/mainVisual_sp.jpg);
-    /* height: 60.7rem; */
+    background-size: cover;
+    height: 45rem;
+    padding-top: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 15.4rem;
 }
 
 @media screen and (min-width: 768px) {
     .main{
         background-image: url(/assets/image/mainVisual_pc.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 3.2rem 2rem 27.1rem 2rem;
+        margin-bottom: 0;
         height: 72rem;
-        width: 100%;
-        margin-inline: auto;
-        max-width: 150rem;
-
     }
     
 }
 
 
 .main__block{
-    padding: 2.1rem 2.3rem 5.2rem 2.3rem;
+    margin-inline: auto;
+    width: 34.3rem;
 }
 @media screen and (min-width: 768px) {
     .main__block{
-        padding: 2.9rem 22.3rem 27.4rem;
+        margin-inline: auto;
+        width: 105.4rem;
     }
     
 }
@@ -90,7 +97,7 @@ a:hover {
 
 .main__logo{
     font-size: 2.4rem;
-    line-height: 3.2rem;
+    line-height: 1.33;
     text-align: center;
     letter-spacing: .48rem;
     margin-bottom: 36.1rem;
@@ -98,24 +105,24 @@ a:hover {
 @media screen and (min-width: 768px) {
     .main__logo{
         font-size: 2.8rem;
-        line-height: 3.7rem;
+        line-height: 1.25;
         text-align: center;
         letter-spacing: .56rem;
-        margin-bottom: 20.1rem;
+        margin-bottom: 20.5rem;
     }
     
 }
 
-.main__block h1{
+.main__block-tit{
     font-size: 4.1rem;
-    line-height: 5.4rem;
+    line-height: 1.24;
     letter-spacing: 1.23rem;
     margin-bottom: .6rem;
 }
 @media screen and (min-width: 768px) {
-    .main__block h1{
+    .main__block-tit{
         font-size: 5rem;
-        line-height: 6.8rem;
+        line-height: 1.36;
         letter-spacing: 1.5rem;
         margin-bottom: 1.1rem;
     }
@@ -123,15 +130,15 @@ a:hover {
 }
 
 .main__block-txt{
-    font-size: 2.0rem;
-    line-height: 2.7rem;
+    font-size: 2rem;
+    line-height: 1.45;
     letter-spacing: .6rem;
 }
 
 @media screen and (min-width: 768px) {
     .main__block-txt{
         font-size: 2.5rem;
-        line-height: 3.3rem;
+        line-height: 1.32;
         letter-spacing: .75rem;
     }
     
@@ -151,18 +158,7 @@ a:hover {
     
 }
 
-.shop2{
-    padding: 0 1.6rem 1rem 1.6rem;
-    width: 100%;
-}
-@media screen and (min-width: 768px) {
-    .shop2{
-        padding: 4.8rem 0 .8rem 0;
-        margin-inline: auto;
-        max-width: 100rem;
-    }
-    
-}
+
 .shop__block{
     background-color: #F0F4FF;
     padding: 2.2rem 2.9rem 3.4rem 2.9rem;
@@ -181,20 +177,19 @@ a:hover {
     padding-left: 7.2rem;
     margin-bottom: .6rem;
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    line-height: 1.3;
     font-weight: 600;
     letter-spacing: .18rem;
 }
 @media screen and (min-width: 768px) {
     .shop__block div:nth-of-type(1){
-        /* padding-right: 8.5rem; */
         padding-right: 0rem;
     }
     .shop__block-txt1{
         padding-left: 0;
         margin-bottom: 1rem;
         font-size: 2.4rem;
-        line-height: 3.2rem;
+        line-height: 1.3;
         letter-spacing: .24rem;
     }
     
@@ -204,7 +199,7 @@ a:hover {
     padding-left: 10.4rem;
     margin-bottom: 2rem;
     font-size: 1.4rem;
-    line-height: 1.9rem;
+    line-height: 1.36;
     letter-spacing: .14rem;
 }
 @media screen and (min-width: 768px) {
@@ -212,7 +207,7 @@ a:hover {
         padding-left: 0;
         margin-bottom: 0;
         font-size: 1.6rem;
-        line-height: 2.1rem;
+        line-height: 1.31;
         letter-spacing: .16rem;
     }
     
@@ -226,7 +221,7 @@ a:hover {
     padding-left: 6.1rem;
     padding-bottom: 1.6rem;
     font-size: 1.8rem;
-    line-height: 2.4rem; 
+    line-height: 1.33; 
     letter-spacing: 0;
     color: #FFF;   
     margin-bottom: 2rem;
@@ -248,7 +243,7 @@ a:hover {
     padding-left: 11.4rem;
     padding-bottom: 1.6rem;
     font-size: 1.8rem;
-    line-height: 2.4rem; 
+    line-height: 1.33; 
     letter-spacing: 0;
     font-weight: 600;
     color: #FFF; 
@@ -271,19 +266,27 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
     .explain{
-        padding: 12.7rem 20.4rem 16rem 82.9rem;
+        padding: 12.7rem 2rem;
         background-image: url(/assets/image/explainVisual_pc.jpg);
         background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .explain__block{
         margin-inline: auto;
-        max-width: 150rem;
-        height: 55rem;
+        width: 101.6rem;
+        display: flex;
+        justify-content: flex-end;
     }
     
 }
 
 .explain__block-tit-en{
     font-size: 3.0rem;
-    line-height: 5.4rem;
+    line-height: 1.8;
     font-weight: bold;
     letter-spacing: 0;
     text-align: center;
@@ -294,6 +297,7 @@ a:hover {
     .explain__block-tit-en{
         font-size: 3.8rem;
         text-align: left;
+        
     }
     
 }    
@@ -302,7 +306,7 @@ a:hover {
     font-weight: 600;
     color: #FFF;
     font-size: 2.4rem;
-    line-height: 5.4rem;
+    line-height: 2.25;
     letter-spacing: 0;
     margin-bottom: 2.3rem;
     text-align: center;
@@ -317,13 +321,14 @@ a:hover {
 
 .explain__block-txt{
     font-size: 1.4rem;
-    line-height: 3.2rem;
+    line-height: 2.29;
     letter-spacing: 0;
     color: #FFF;
 }
 @media screen and (min-width: 768px) {
     .explain__block-txt{
         text-align: left;
+        width: 42.9rem;
     }
     
 }
@@ -331,7 +336,7 @@ a:hover {
 
 /* Voices */
 .voices{
-    padding: 5rem 1.6rem;
+    padding: 5rem 5.5rem;
     width: 100%;
     margin-inline: auto;
 }
@@ -346,7 +351,7 @@ a:hover {
 
 .voices-tit-en{
     font-size: 3.0rem;
-    line-height: 3.2rem;
+    line-height: 1.07;
     letter-spacing: .15rem;
     font-weight: bold;
     text-align: center;
@@ -355,7 +360,7 @@ a:hover {
 @media screen and (min-width: 768px) {
     .voices-tit-en{
         font-size: 4.5rem;
-        line-height: 3.2rem;
+        line-height: 0.71;
         letter-spacing: .225rem;
         font-weight: bold;
         text-align: center;
@@ -364,15 +369,16 @@ a:hover {
 }
 .voices-tit-jp{
     font-size: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 2;
     letter-spacing: .08rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 3.6rem;
 }
 @media screen and (min-width: 768px) {
     .voices-tit-jp{
         font-size: 2rem;
-        line-height: 3.2rem;
+        line-height: 1.6;
         letter-spacing: .1rem;
         font-weight: 600;
         text-align: center;
@@ -381,11 +387,17 @@ a:hover {
 
 }
 
+.voices__slider{
+    margin-inline: auto;
+    max-width: 28rem;
+}
 
 
 @media screen and (min-width:768px){
     .voices__slider{
         display: flex;
+        margin-inline: auto;
+        max-width: 115.6rem;
     }
 }
 
@@ -397,18 +409,22 @@ a:hover {
 }
 .voices__slider__item__inner{
     background-color: #DBF7F9 ;
-    padding: 2.8rem 1.5rem 8.5rem 1.5rem;
+    padding: 2.8rem 0 8.5rem 0;
+    margin-bottom: 1.6rem;
 
 }
 @media screen and (min-width:768px) {
     .voices__slider__item__inner{
         padding: 4rem 1.6rem 7rem 1.6rem;
+        margin-bottom: 2.4rem;
     }    
 }
-.voices__slider__item div{
-    margin-bottom: .9rem;
-}
 
+.voices__slider__item div img{
+    width: 8rem;
+    height: 8rem;
+    margin-inline: auto;
+}
 @media screen and (min-width:768px) {
     .voices__slider__item div img{
         width: 10rem;
@@ -421,13 +437,13 @@ a:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.4rem;
-    line-height: 3.2rem;
+    line-height: 2.29;
     letter-spacing: .07rem;
 }
 @media screen and (min-width:768px) {
     .voices__slider__item p:nth-of-type(1){
         font-size: 1.5rem;
-        line-height: 3.2rem;
+        line-height: 2.13;
         letter-spacing: .075rem;
         margin-bottom: 1.6rem;
     }
@@ -435,40 +451,76 @@ a:hover {
 }
 .voices__slider__item p:nth-of-type(2){
     font-size: 1.4rem;
-    line-height: 2.8rem;
+    line-height: 2;
     letter-spacing: 0;
+    max-width: 25rem;
+    margin-inline: auto;
 }
 @media screen and (min-width:768px) {
     .voices__slider__item p:nth-of-type(2){
         font-size: 1.6rem;
+        max-width: 26.8rem;
+        margin-inline: auto;
     }
     
 }
 
+
+
 .slick-arrow{
-    width: 4.8rem;
+    width: 3.2rem;
+    position: absolute;
+    top: 50%;
+
+}
+@media screen and (min-width:768px){
+    .slick-arrow{
+        width: 4.8rem;
+        position: absolute;
+    }
 }
 .prev-arrow{
     height: 3.2rem;
     width: 3.2rem;
+    position: absolute;
+    left: -14%;
 }
 @media screen and (min-width: 768px){
     .prev-arrow{
         height: 4.8rem;
         width: 4.8rem;
+        position: absolute;
+        left: -7%;
+        top: 45%;
     }
     
 }
 .next-arrow{
     height: 3.2rem;
     width: 3.2rem;
+    position: absolute;
+    right: -14%;
 }
 @media screen and (min-width: 768px){
     .next-arrow{
         height: 4.8rem;
         width: 4.8rem;
+        position: absolute;
+        right: -7%;
+        top: 45%;  
     }
     
+}
+
+.slick-dots{
+    margin-top: 1.6rem;
+}
+.slick-dots li button::before{
+    color: #EEE;
+    font-size: 3rem;
+}
+.slick-dots li.slick-active button::before {
+    color: #00AFBF ;
 }
 
 
@@ -492,7 +544,7 @@ a:hover {
 }
 .question-tit-en{
     font-size: 3.0rem;
-    line-height: 3.2rem;
+    line-height: 1.07;
     letter-spacing: .15rem;
     font-weight: bold;
     text-align: center;
@@ -501,7 +553,7 @@ a:hover {
 @media screen and (min-width: 768px){
     .question-tit-en{
         font-size: 4.5rem;
-        line-height: 3.2rem;
+        line-height: 0.71;
         letter-spacing: .225rem;
         font-weight: bold;
         text-align: center;
@@ -512,7 +564,7 @@ a:hover {
 
 .question-tit-jp{
     font-size: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 2;
     letter-spacing: .08rem;
     font-weight: 600;
     text-align: center;
@@ -521,7 +573,7 @@ a:hover {
 @media screen and (min-width: 768px){
     .question-tit-jp{
         font-size: 2rem;
-        line-height: 3.2rem;
+        line-height: 1.6;
         letter-spacing: .1rem;
         font-weight: 600;
         text-align: center;
@@ -539,32 +591,23 @@ a:hover {
     padding: 2rem 1.66rem 1.9rem 1.6rem;
     cursor: pointer;
     position: relative;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 @media screen and (min-width: 768px){
     .question__accordion__header{
-        margin-bottom: 2.4rem;
+        margin-top: 2.4rem;
     }   
-}
-
-.question__accordion__header.active{
-    margin-bottom: 0;
 }
 
 
 .question__accordion__content {
     background-color: #FFF;
     padding: .1rem 1.7rem 6.2rem 1.6rem;
-    margin-bottom: 2rem;
 }
-@media screen and (min-width: 768px){
-    .question__accordion__content{
-        margin-bottom: 2.4rem;
-    }   
-}
+
 .question__accordion__header p{
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 1.87;
     position: relative;
     padding-left: 2.8rem;
     padding-right: 2.64rem;
@@ -573,7 +616,7 @@ a:hover {
 
 .question__accordion__content p{
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 1.87;
     letter-spacing: 0;
     font-weight: 600;
     position: relative;
@@ -586,7 +629,7 @@ a:hover {
     top: 0;
     left: 0;
     font-size: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 2;
     letter-spacing: .08rem;
     font-family: "EB Garamond", serif;
 }
@@ -604,7 +647,7 @@ a:hover {
     top: 0;
     left: 0;
     font-size: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 2;
     letter-spacing: .08rem;
     font-family: "EB Garamond", serif;
 }
@@ -644,14 +687,19 @@ a:hover {
 /* footer */
 
 .to-top{
+    position: sticky;
     width: 100%;
     padding: 0 1.6rem 0 33.4rem;
+    top: calc(100% - 20.4rem);
+    z-index: 100;
 }
 @media screen and (min-width: 768px){
     .to-top{
         width: 100%;
         padding: 0;
         text-align: right;
+        top: calc(100% - 14.4rem);
+        z-index: 100;
     }
 }
 
@@ -687,7 +735,7 @@ a:hover {
 }
 .footer-box__logo{
     font-size: 2.8rem;
-    line-height: 3.7rem;
+    line-height: 1.32;
     letter-spacing: .56rem;
     color: #FFF;
     text-align: center;
@@ -696,7 +744,7 @@ a:hover {
 @media screen and (min-width: 768px){
     .footer-box__logo{
         font-size: 3.2rem;
-        line-height: 4.3rem;
+        line-height: 1.34;
         letter-spacing: .64rem;
         color: #FFF;
         margin-bottom: 0;
@@ -718,19 +766,19 @@ a:hover {
 }
 .footer-box ul li a{
     font-size: 1.2rem;
-    line-height: 1.6rem;
+    line-height: 1.33;
     letter-spacing: 0;
     color: #FFF;
 }
 @media screen and (min-width: 768px){
     .footer-box ul li a{
         font-size: 1.4rem;
-        line-height: 1.9rem;
+        line-height: 1.36;
     }
 }
 .footer-box-txt{
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.36;
     letter-spacing: 0;
     color: #FFF;
     text-align: center;
@@ -738,7 +786,7 @@ a:hover {
 @media screen and (min-width: 768px){
     .footer-box-txt{
         font-size: 1.2rem;
-        line-height: 1.6rem;
+        line-height: 1.33;
         display: flex;
         align-items: center;
     }
