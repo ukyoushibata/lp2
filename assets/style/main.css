@@ -72,7 +72,7 @@ a:hover {
         background-image: url(/assets/image/main_visual_pc.jpg);
         background-size: cover;
         background-position: center;
-        padding: 2.7rem 2rem 27.1rem 2rem;
+        padding: 3.8rem 2rem 27.1rem 2rem;
         margin-bottom: 0;
         height: 72rem;
     }
@@ -737,11 +737,11 @@ a:hover {
 
 .shop__lower{
     padding-top: 4.8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
 }
 @media screen and (min-width: 768px){
     .shop__lower{
-        padding-bottom: 0.5rem;
+        padding-bottom: 5rem;
     }
     
 }
@@ -749,7 +749,7 @@ a:hover {
 /* footer */
 
 .to-top{
-    position: sticky;
+    position: fixed;
     width: 100%;
     padding: 0 1.6rem 0 33.4rem;
     top: calc(100% - 20.4rem);

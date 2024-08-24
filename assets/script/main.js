@@ -23,3 +23,19 @@ $('.question__accordion__header').click(function () {
     $(this).next().slideToggle();
     $(this).toggleClass('active');
 });
+
+$(function () {
+    var to_top = $('.to-top');
+    to_top.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            to_top.fadeIn();
+        } else {
+            to_top.fadeOut();
+        }
+    });
+    to_top.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
