@@ -61,7 +61,7 @@ a:hover {
     background-image: url(/assets/image/main_visual_sp.jpg);
     background-size: cover;
     height: 45rem;
-    padding-top: 2.4rem;
+    padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 15.7rem;
@@ -72,7 +72,7 @@ a:hover {
         background-image: url(/assets/image/main_visual_pc.jpg);
         background-size: cover;
         background-position: center;
-        padding: 3.2rem 2rem 27.1rem 2rem;
+        padding: 2.7rem 2rem 27.1rem 2rem;
         margin-bottom: 0;
         height: 72rem;
     }
@@ -94,19 +94,16 @@ a:hover {
 
 
 .main__logo{
-    font-size: 2.4rem;
-    line-height: 1.33;
     text-align: center;
-    letter-spacing: .48rem;
-    margin-bottom: 36.1rem;
+    margin-bottom: 37rem;
 }
 @media screen and (min-width: 768px) {
     .main__logo{
-        font-size: 2.8rem;
-        line-height: 1.25;
         text-align: center;
-        letter-spacing: .56rem; 
-        margin-bottom: 20.5rem; 
+        margin-bottom: 21.3rem; 
+    }
+    .main__logo img{
+        width: 16.6rem;
     }
     
 }
@@ -717,7 +714,7 @@ a:hover {
     position: absolute;
     content:"";
     background-image: url(/assets/image/caret_down_fill.png);
-    top: 1.8rem;
+    top: 1.6rem;
     right: 0;
     width: 1.16rem;
     height: .748rem;
@@ -742,6 +739,12 @@ a:hover {
     padding-top: 4.8rem;
     padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px){
+    .shop__lower{
+        padding-bottom: 0.5rem;
+    }
+    
+}
 
 /* footer */
 
@@ -750,7 +753,7 @@ a:hover {
     width: 100%;
     padding: 0 1.6rem 0 33.4rem;
     top: calc(100% - 20.4rem);
-    z-index: 100;
+    z-index: 1000;
 }
 @media screen and (min-width: 768px){
     .to-top{
@@ -759,6 +762,7 @@ a:hover {
         text-align: right;
         top: calc(100% - 14.4rem);
         z-index: 100;
+        padding-right: 15rem;
     }
 }
 
@@ -770,13 +774,21 @@ a:hover {
     padding: 1.2rem 1.3rem;
     margin: 0 0 0 auto;
 }
+
+@media screen and (min-width: 768px){
+    .to-top a{
+        height: 4.2rem;
+    }
+    
+}
+
 .to-top a img{
     height: 1.6rem;
     width: 1.4rem;
 }
 .footer-box{
     background-color: #0071CE;
-    padding: 2.1rem 5.3rem 2.4rem 4.5rem;
+    padding: 3.1rem 4rem 2.4rem 4rem;
 }
 @media screen and (min-width: 768px){
     .footer__pc{
@@ -786,40 +798,36 @@ a:hover {
     .footer-box{
         display: flex;
         justify-content: space-between;
-        gap: 15rem;
-        padding: 2.8rem 0 3.3rem;
-        max-width: 114.8rem;
+        padding: 3.8rem 0 4.3rem;
+        max-width: 113.6rem;
         margin-inline: auto;
     } 
 }
 .footer-box__logo{
-    font-size: 2.8rem;
-    line-height: 1.32;
-    letter-spacing: .56rem;
-    color: #FFF;
     text-align: center;
-    margin-bottom: 2.6rem;
+    margin-bottom: 3.3rem;
 }
 @media screen and (min-width: 768px){
     .footer-box__logo{
-        font-size: 3.2rem;
-        line-height: 1.34;
-        letter-spacing: .64rem;
-        color: #FFF;
         margin-bottom: 0;
+    }
+    .footer-box__logo img{
+        width: 19rem;
     }
 }
 
 .footer-box ul{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.6rem;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2.4rem;
 }
 @media screen and (min-width: 768px){
     .footer-box ul{
         margin-bottom: 0;
         align-items: center;
-        gap: 4rem;
+        gap: 3.2rem;
+        padding-left: 5.1rem;
     }
 }
 .footer-box ul li a{

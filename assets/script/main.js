@@ -21,4 +21,5 @@ $(document).ready(function () {
 
 $('.question__accordion__header').click(function () {
     $(this).next().slideToggle();
+    $(this).toggleClass('active');
 });
