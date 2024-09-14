@@ -4,7 +4,7 @@ $(document).ready(function () {
         arrows: true,
         dots: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         prevArrow: '<img src="/assets/image/arrow_left_circle_fill.jpg" class="slide-arrow prev-arrow">',
         nextArrow: '<img src="/assets/image/arrow_right_circle_fill.jpg" class="slide-arrow next-arrow">',
         responsive: [
